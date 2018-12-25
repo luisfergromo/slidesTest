@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<!-- Add ?print-pdf to url -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- From Markdown File-->
+<!--
+			<section data-markdown="slides.md" data-separator="!!!" data-separator-vertical="!!v" data-separator-notes="^Note:"></section>
+-->
+			<!-- From Html Code -->
+				<section>
+				<h2>Title</h2>
+				<img src="https://camo.githubusercontent.com/e3b3088a2dd7a53caf72de529b3ce41465dd99f0/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f68616b696d2d7374617469632f72657665616c2d6a732f7064662d7072696e742d73657474696e67732d322e706e67">
+
+				<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+					</aside>
+
+			</section>
+			<section>
+				<section>
+					<h2>This video will use up the remaining space on the slide</h2>
+					<video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+				</section>
+				<section><h2>Slide 1.2</h2></section>
+				<section><h2>Slide 1.3</h2></section>
+			</section>
+			<section>
+				Slide 2
+				<section>Slide 2.1</section>
+				<section>Slide 2.2</section>
+				<section>Slide 2.3</section>
+			</section>
+			
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
